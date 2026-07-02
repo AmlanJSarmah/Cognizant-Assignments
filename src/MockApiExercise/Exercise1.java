@@ -1,4 +1,4 @@
-package MokitoExercise;
+package MockApiExercise;
 
 class ExternalApi {
     public String getData() {
