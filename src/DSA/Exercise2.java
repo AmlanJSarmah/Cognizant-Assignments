@@ -42,3 +42,5 @@ public class Exercise2 {
         System.out.println("Binary: " + (binRes != -1 ? sorted[binRes] : "Not found"));
     }
 }
+
+class vehical {}
