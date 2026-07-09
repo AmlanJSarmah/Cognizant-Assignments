@@ -20,5 +20,6 @@
     </orderEntry>
     <orderEntry type="library" exported="" name="mockito-core-4.11.0" level="project" />
     <orderEntry type="library" exported="" name="objenesis-3.3" level="project" />
+    <orderEntry type="library" exported="" name="spring-beans-5.3.30" level="project" />
   </component>
 </module>
