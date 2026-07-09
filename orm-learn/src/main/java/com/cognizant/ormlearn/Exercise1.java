@@ -11,8 +11,8 @@ import com.cognizant.ormlearn.service.CountryService;
 import java.util.List;
 
 @SpringBootApplication
-public class OrmLearnApplication {
-    private static final Logger LOGGER = LoggerFactory.getLogger(OrmLearnApplication.class);
+public class Exercise1 {
+    private static final Logger LOGGER = LoggerFactory.getLogger(Exercise1.class);
     private static CountryService countryService;
 
     private static void testGetAllCountries() {
@@ -23,7 +23,7 @@ public class OrmLearnApplication {
     }
 
     public static void main(String[] args) {
-        ApplicationContext context = SpringApplication.run(OrmLearnApplication.class, args);
+        ApplicationContext context = SpringApplication.run(Exercise1.class, args);
         countryService = context.getBean(CountryService.class);
         LOGGER.info("Inside main");
         testGetAllCountries();

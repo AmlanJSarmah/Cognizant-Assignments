@@ -1,4 +1,7 @@
+com/cognizant/ormlearn/Exercise1.class
 com/cognizant/ormlearn/service/CountryService.class
-com/cognizant/ormlearn/OrmLearnApplication.class
+com/cognizant/ormlearn/model/Employee.class
+com/cognizant/ormlearn/Exercise2.class
+com/cognizant/ormlearn/repository/EmployeeRepository.class
 com/cognizant/ormlearn/model/Country.class
 com/cognizant/ormlearn/repository/CountryRepository.class
