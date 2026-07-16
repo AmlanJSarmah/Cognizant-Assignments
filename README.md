@@ -4,6 +4,8 @@
 3. A corresponding markdown file such as *Exercise1.md* outlines all the theory.
 4. The **Spring Data JPA with Spring Boot & Hibernate** exercise is inside the `orm-learn` directory as a standalone Maven project.
 5. The **Spring Web** exercise is inside the `spring-learn` directory as a standalone Maven project.
+6. The **Hello World REST** exercise is inside the `Hello-World-Rest` directory as a standalone Maven project.
+7. The **Country REST API** exercise is inside the `Country-Api` directory as a standalone Maven project.
 
 ### Running orm-learn
 
@@ -42,3 +44,41 @@ cd spring-learn
 ```
 
 Loads `country.xml`, creates 4 Country beans, logs constructor/setter calls, and prints one country.
+
+### Running Hello-World-Rest
+
+```bash
+cd Hello-World-Rest
+../apache-maven-3.9.6/bin/mvn spring-boot:run
+```
+
+Starts on port 8083. Test the endpoint:
+
+```bash
+curl http://localhost:8083/hello
+# Response: Hello World!!
+```
+
+Controller logs `Start` and `End` around each request.
+
+### Running Country-Api
+
+```bash
+cd Country-Api
+../apache-maven-3.9.6/bin/mvn spring-boot:run
+```
+
+Starts on port 8083. Test the endpoints:
+
+```bash
+curl http://localhost:8083/country
+# Response: {"code":"IN","name":"India"}
+
+curl http://localhost:8083/countries/in
+# Response: {"code":"IN","name":"India"}
+
+curl http://localhost:8083/countries/US
+# Response: {"code":"US","name":"United States"}
+```
+
+`/country` returns India. `/countries/{code}` returns any country from `country.xml` with case-insensitive matching.
