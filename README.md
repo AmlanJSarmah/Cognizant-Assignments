@@ -8,6 +8,10 @@
 7. The **Country REST API** exercise is inside the `Country-Api` directory as a standalone Maven project.
 8. The **JWT Authentication** exercise is inside the `JWT-Demo` directory as a standalone Maven project.
 9. The **Microservices Account & Loan** exercise is inside the `Microservices-Account-Exercise` directory with two sub-projects: `account` and `loan`.
+10. The **React Exercise 1** is inside the `React-Exercise-1` directory as a Vite + React project.
+11. The **React Exercise 2 (Student Management Portal)** is inside the `React-Exercise-2` directory as a Vite + React project with Home, About, and Contact components.
+12. The **React Exercise 3 (Score Calculator App)** is inside the `React-Exercise-3` directory as a Vite + React project with a CalculateScore component.
+13. The **React Exercise 4 (Blog App)** is inside the `React-Exercise-4` directory as a Vite + React project using class components to fetch and display posts from JSONPlaceholder.
 
 ### Running orm-learn
 
@@ -130,3 +134,46 @@ curl http://localhost:8081/loans/H00987987972342
 ```
 
 Both must run simultaneously on different ports.
+
+### Running React-Exercise-1
+
+```bash
+cd React-Exercise-1
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`. Displays "Welcome to the first session of react".
+
+### Running React-Exercise-2 (Student Management Portal)
+
+```bash
+cd React-Exercise-2
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`. Renders three components:
+- **Home** — "Welcome to the Home page of Student Management Portal"
+- **About** — "Welcome to the About page of the Student Management Portal"
+- **Contact** — "Welcome to the Contact page of the Student Management Portal"
+
+### Running React-Exercise-3 (Score Calculator App)
+
+```bash
+cd React-Exercise-3
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`. The `CalculateScore` component accepts `name`, `school`, `total`, and `goal` as props, calculates the average percentage, and displays a styled score card.
+
+### Running React-Exercise-4 (Blog App)
+
+```bash
+cd React-Exercise-4
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`. Uses a class-based `Posts` component that fetches posts from `https://jsonplaceholder.typicode.com/posts` via `componentDidMount`, renders titles and bodies, and uses `componentDidCatch` for error handling.
