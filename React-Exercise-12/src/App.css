@@ -1,0 +1,91 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #1a237e;
+  text-align: center;
+}
+
+h2 {
+  color: #283593;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #1a237e;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.navbar span {
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: #1a237e;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e8eaf6;
+}
+
+.flight-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px 0;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flight-card h3 {
+  margin: 0 0 6px;
+  color: #1a237e;
+}
+
+.flight-card .route {
+  color: #555;
+  font-size: 14px;
+}
+
+.book-btn {
+  background-color: #2e7d32;
+  color: white;
+  padding: 8px 20px;
+}
+
+.book-btn:hover {
+  background-color: #388e3c;
+}
+
+.guest-msg {
+  color: #c62828;
+  font-style: italic;
+}
+
+.booking-confirmation {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  border-radius: 8px;
+  color: #2e7d32;
+}

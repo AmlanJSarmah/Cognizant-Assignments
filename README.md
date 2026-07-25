@@ -12,6 +12,12 @@
 11. The **React Exercise 2 (Student Management Portal)** is inside the `React-Exercise-2` directory as a Vite + React project with Home, About, and Contact components.
 12. The **React Exercise 3 (Score Calculator App)** is inside the `React-Exercise-3` directory as a Vite + React project with a CalculateScore component.
 13. The **React Exercise 4 (Blog App)** is inside the `React-Exercise-4` directory as a Vite + React project using class components to fetch and display posts from JSONPlaceholder.
+14. The **React Exercise 9 (Cricket App)** is inside the `React-Exercise-9` directory as a Vite + React project demonstrating ES6 features: `map()`, `filter()`, arrow functions, destructuring, and array spread in a cricket players context.
+15. The **React Exercise 10 (Office Space Rental App)** is inside the `React-Exercise-10` directory as a Vite + React project displaying office spaces with JSX, inline CSS for rent coloring, and list rendering via `map()`.
+16. The **React Exercise 11 (Event Examples App)** is inside the `React-Exercise-11` directory as a Vite + React project demonstrating event handling: counters, synthetic events, and currency conversion.
+17. The **React Exercise 12 (Ticket Booking App)** is inside the `React-Exercise-12` directory as a Vite + React project demonstrating conditional rendering with guest/user pages and flight booking.
+18. The **React Exercise 13 (Blogger App)** is inside the `React-Exercise-13` directory as a Vite + React project demonstrating three conditional rendering methods: if/else, short-circuit `&&`, and ternary operator across Book, Blog, and Course components.
+11. The **React Exercise 5 (Cohort Dashboard)** is inside the `React-Exercise-5` directory as a Vite + React project demonstrating CSS Modules for styling cohort cards with conditional color for ongoing/completed status.
 
 ### Running orm-learn
 
@@ -177,3 +183,82 @@ npm run dev
 ```
 
 Opens at `http://localhost:5173`. Uses a class-based `Posts` component that fetches posts from `https://jsonplaceholder.typicode.com/posts` via `componentDidMount`, renders titles and bodies, and uses `componentDidCatch` for error handling.
+
+### Running React-Exercise-9 (Cricket App)
+
+```bash
+cd React-Exercise-9
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`. Demonstrates ES6 features in a cricket context:
+- **ListofPlayers** — 11 players displayed via `map()`; filtered below 70 using arrow functions.
+- **IndianPlayers** — Odd/even teams via destructuring; T20 and Ranji Trophy arrays merged with spread (`...`).
+- Toggle `flag` in `App.jsx` to switch between the two components.
+
+### Running React-Exercise-10 (Office Space Rental App)
+
+```bash
+cd React-Exercise-10
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`. Displays office spaces using JSX:
+- A featured office object with Name, Rent, and Address.
+- A list of office objects rendered via `map()`.
+- Rent color is **red** if below 60000, **green** if above 60000, using inline CSS.
+
+### Running React-Exercise-11 (Event Examples App)
+
+```bash
+cd React-Exercise-11
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`. Demonstrates React event handling:
+- **Counter** — Increment/Decrement buttons; "Increase" button calls both `increment()` and `sayHello()` simultaneously.
+- **Say Welcome** — Button passes `'Welcome!'` as an argument to `sayWelcome()`.
+- **Synthetic Event** — "OnPress" button uses a synthetic event to display "I was clicked".
+- **Currency Convertor** — Form converts Euro to Indian Rupees (rate: 96.5) on submit.
+
+### Running React-Exercise-12 (Ticket Booking App)
+
+```bash
+cd React-Exercise-12
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`. Demonstrates conditional rendering:
+- **Guest Page** — Browse flight details with no booking option.
+- **User Page** — Login to see Book buttons on each flight; booking shows a confirmation message.
+- Login/Logout buttons toggle between the two views using `isLoggedIn` state.
+
+### Running React-Exercise-13 (Blogger App)
+
+```bash
+cd React-Exercise-13
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`. Demonstrates three conditional rendering methods:
+- **BookDetails** — Uses `if/else` to return `null` when hidden.
+- **BlogDetails** — Uses short-circuit `&&` to conditionally render the table.
+- **CourseDetails** — Uses ternary `? :` to switch between table and fallback message.
+- Control buttons toggle visibility of all, none, or individual components.
+
+### Running React-Exercise-5 (Cohort Dashboard)
+
+```bash
+cd React-Exercise-5
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`. Demonstrates CSS Modules styling:
+- **CohortDetails.module.css** — `.box` class with 300px width, inline-block, 10px margin, 10px/20px padding, 1px black border, 10px border-radius; `<dt>` tag selector with font-weight 500.
+- **CohortDetails component** — Imports CSS module, applies `styles.box` to container div, uses inline `style` for conditional `<h3>` color: green if ongoing, blue if completed.

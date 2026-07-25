@@ -1,0 +1,21 @@
+.box {
+  width: 300px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  vertical-align: top;
+}
+
+.box dt {
+  font-weight: 500;
+}
+
+.box dt span {
+  display: block;
+  font-size: 13px;
+  color: #555;
+}
