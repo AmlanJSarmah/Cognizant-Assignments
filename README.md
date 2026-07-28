@@ -17,7 +17,8 @@
 16. The **React Exercise 11 (Event Examples App)** is inside the `React-Exercise-11` directory as a Vite + React project demonstrating event handling: counters, synthetic events, and currency conversion.
 17. The **React Exercise 12 (Ticket Booking App)** is inside the `React-Exercise-12` directory as a Vite + React project demonstrating conditional rendering with guest/user pages and flight booking.
 18. The **React Exercise 13 (Blogger App)** is inside the `React-Exercise-13` directory as a Vite + React project demonstrating three conditional rendering methods: if/else, short-circuit `&&`, and ternary operator across Book, Blog, and Course components.
-11. The **React Exercise 5 (Cohort Dashboard)** is inside the `React-Exercise-5` directory as a Vite + React project demonstrating CSS Modules for styling cohort cards with conditional color for ongoing/completed status.
+19. The **React Exercise 5 (Cohort Dashboard)** is inside the `React-Exercise-5` directory as a Vite + React project demonstrating CSS Modules for styling cohort cards with conditional color for ongoing/completed status.
+20. The **Git Exercise** are in the file  `Git assignments.docx`.
 
 ### Running orm-learn
 
